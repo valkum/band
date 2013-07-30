@@ -24,6 +24,8 @@ projects[entityreference][version] = "1.0"
 
 projects[features][version] = "2.0-rc1"
 
+projects[colorbox][version] = "2.4"
+
 projects[fonticon][version] = "1.x-dev"
 
 projects[jquery_update][version] = "2.3"
@@ -47,6 +49,8 @@ projects[pushtape_events][download][url] = "https://github.com/valkum/pushtape_e
 projects[pushtape_events][version] = "1.0"
 
 projects[pushtape_news][version] = "1.0-beta1"
+
+projects[pushtape_audio][version] = "1.0-beta1"
 
 projects[pushtape_photos][version] = "1.0-beta1"
 
