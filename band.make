@@ -39,14 +39,14 @@ projects[metatag][version] = "1.0-beta7"
 projects[pathauto][version] = "1.2"
 
 projects[pushtape_admin][download][type] = "git"
-projects[pushtape_admin][download][url] = ""
-projects[pushtape_admin][version] = "1.0-beta1"
+projects[pushtape_admin][download][url] = "https://github.com/valkum/pushtape_admin.git"
+projects[pushtape_admin][version] = "1.0"
 
 projects[pushtape_discography][version] = "1.0-beta1"
 
 projects[pushtape_events][download][type] = "git"
-projects[pushtape_events][download][url] = ""
-projects[pushtape_events][version] = "1.0-beta1"
+projects[pushtape_events][download][url] = "https://github.com/valkum/pushtape_events.git"
+projects[pushtape_events][version] = "1.0"
 
 projects[pushtape_news][version] = "1.0-beta1"
 
@@ -68,7 +68,7 @@ projects[framework][version] = "3.6"
 ; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
 ; and url is the url of the download.
 projects[wsc_2013][download][type] = "git"
-projects[wsc_2013][download][url] = ""
+projects[wsc_2013][download][url] = "https://github.com/valkum/wsc_2013.git"
 projects[wsc_2013][type] = "theme"
 projects[wsc_2013][version] = "7.x-1.0"
 
