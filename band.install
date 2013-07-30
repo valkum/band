@@ -9,9 +9,9 @@ function band_install() {
   variable_set('sm2_path', 'profiles/pushtape/libraries/soundmanager2');
 
   // Enable themes
-  theme_enable(array('seven', 'wsc_213'));
+  theme_enable(array('seven', 'wsc_2013'));
   variable_set('admin_theme', 'seven');
-  variable_set('theme_default', 'wsc_213');
+  variable_set('theme_default', 'wsc_2013');
   variable_set('site_frontpage', '');
   variable_set('pathauto_node_pattern', '[node:title]');
   variable_set('pathauto_node_album_pattern', 'release/[node:title]');
@@ -177,7 +177,7 @@ function band_install_tasks(&$install_state) {
      // Remove any status messages that might have been set. They are unneeded.
   drupal_get_messages('status', TRUE);
   $tasks = array(
-  'pushtape_final_site_setup' => array(
+  'band_final_site_setup' => array(
 
     ),
   );
@@ -248,7 +248,7 @@ function band_install_tasks_alter(&$tasks, $install_state) {
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 2) + $new_task + array_slice($old_tasks, 2);
 
-  _pushtape_set_theme('flux');
+  _band_set_theme('wsc_2013');
 }
 
 
@@ -259,13 +259,13 @@ function band_install_tasks_alter(&$tasks, $install_state) {
  * process and forces enable the maintenance theme too early in the request
  * for us to modify it in a clean way.
  */
-function _pushtape_set_theme($target_theme) {
+function _band_set_theme($target_theme) {
   //print '<pre>';print_r($GLOBALS);print '</pre>';
   if ($GLOBALS['theme'] != $target_theme) {
     unset($GLOBALS['theme']);
     drupal_static_reset();
     $GLOBALS['conf']['maintenance_theme'] = $target_theme;
-    $GLOBALS['conf']['site_name'] = 'Pushtape Installation';
+    $GLOBALS['conf']['site_name'] = 'Band Installation';
     _drupal_maintenance_theme();
   }
 }
