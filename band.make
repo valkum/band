@@ -50,15 +50,15 @@ projects[pathauto][version] = "1.2"
 
 projects[plupload][version] = "1.6"
 
+projects[pushtape_admin][type] = "module"
 projects[pushtape_admin][download][type] = "git"
 projects[pushtape_admin][download][url] = "https://github.com/valkum/pushtape_admin.git"
-projects[pushtape_admin][version] = "1.0"
 
 projects[pushtape_discography][version] = "1.0-beta1"
 
+projects[pushtape_events][type] = "module"
 projects[pushtape_events][download][type] = "git"
 projects[pushtape_events][download][url] = "https://github.com/valkum/pushtape_events.git"
-projects[pushtape_events][version] = "1.0"
 
 projects[pushtape_news][version] = "1.0-beta1"
 
