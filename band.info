@@ -43,6 +43,6 @@ dependencies[] = pushtape_admin
 dependencies[] = pushtape_news
 dependencies[] = pushtape_events
 dependencies[] = pushtape_photos
-dependencies[] = pushtape_audio
+;dependencies[] = pushtape_audio
 
 files[] = pushtape.profile
