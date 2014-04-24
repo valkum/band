@@ -76,6 +76,8 @@ projects[transliteration][version] = "3.2"
 
 projects[views][version] = "3.7"
 
+projects[workflow][version] = "2.2"
+
 projects[xmlsitemap][version] = "2.0"
 
 ; Themes
