@@ -1,0 +1,22 @@
+<?php
+
+function wsc_install() {
+  $vocab = taxonomy_vocabulary_machine_name_load('cities');
+  taxonomy_vocabulary_delete($vocab->vid);
+
+  field_delete_field('field_city');
+  field_purge_batch(10);
+
+  $rdf = array(
+    'bundle' => 'venues',
+    'type' => 'taxonomy_term',
+    'mapping' => array(
+      'rdftype' => array('schema:thing'),
+      'field_address' => array(
+        'predicates' => array('schema:streetAddress'),
+      ),
+    ),
+  );
+  rdf_mapping_save($rdf);
+}
+function wsc_update_7001() {}

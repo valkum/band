@@ -3,91 +3,127 @@ core = 7.x
 api = 2
 
 ; Modules
-projects[admin_menu][version] = "3.0-rc4"
+projects[ctools][version] = "1.7"
+projects[ctools][subdir] = contrib
 
-projects[ctools][version] = "1.4"
+projects[ckeditor][version] = "1.16"
+projects[ckeditor][subdir] = contrib
 
-; Libraries
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
-libraries[colorbox][directory_name] = "colorbox"
-libraries[colorbox][type] = "library"
+projects[colorbox][version] = "2.8"
+projects[colorbox][subdir] = contrib
 
-; Modules
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
+projects[date][subdir] = contrib
 
-projects[entity][version] = "1.5"
+projects[entity][version] = "1.6"
+projects[entity][subdir] = contrib
 
-projects[entityreference][version] = "1.0"
+projects[entityreference][version] = "1.1"
+projects[entityreference][subdir] = contrib
 
-projects[features][version] = "2.0"
+projects[favicon][version] = "2.1"
+projects[favicon][subdir] = contrib
 
-projects[colorbox][version] = "2.5"
+projects[fb_social][version] = "2.0-beta4"
+projects[fb_social][subdir] = contrib
+
+projects[features][version] = "2.4"
+projects[features][subdir] = contrib
 
 projects[fonticon][version] = "1.x-dev"
+projects[fonticon][subdir] = contrib
 
 projects[google_analytics][version] = "1.4"
+projects[google_analytics][subdir] = contrib
 
-projects[imce][version] = "1.8"
+projects[imce][version] = "1.9"
+projects[imce][subdir] = contrib
 
-projects[jquery_update][version] = "2.4"
+projects[jquery_update][version] = "2.5"
+projects[jquery_update][subdir] = contrib
+
+projects[l10n_update][version] = "2.0"
+projects[l10n_update][subdir] = contrib
 
 projects[libraries][version] = "2.2"
+projects[libraries][subdir] = contrib
 
-projects[link][version] = "1.2"
+projects[link][version] = "1.3"
+projects[link][subdir] = contrib
 
-projects[l10n_update][version] = "1.0"
-
-projects[metatag][version] = "1.0-beta9"
+projects[metatag][version] = "1.4"
+projects[metatag][subdir] = contrib
 
 projects[multiupload_filefield_widget][version] = "1.13"
+projects[multiupload_filefield_widget][subdir] = contrib
 
 projects[multiupload_imagefield_widget][version] = "1.3"
+projects[multiupload_imagefield_widget][subdir] = contrib
 
 projects[pathauto][version] = "1.2"
+projects[pathauto][subdir] = contrib
 
-projects[plupload][version] = "1.6"
-
-projects[pushtape_admin][type] = "module"
-projects[pushtape_admin][download][type] = "git"
-projects[pushtape_admin][download][url] = "https://github.com/valkum/pushtape_admin.git"
-
-projects[pushtape_discography][version] = "1.0-beta1"
-
-projects[pushtape_events][type] = "module"
-projects[pushtape_events][download][type] = "git"
-projects[pushtape_events][download][url] = "https://github.com/valkum/pushtape_events.git"
+projects[plupload][version] = "1.7"
+projects[plupload][subdir] = contrib
 
 projects[pushtape_news][version] = "1.0-beta1"
-
-projects[pushtape_audio][version] = "1.0-beta1"
+projects[pushtape_news][subdir] = contrib
 
 projects[pushtape_photos][version] = "1.0-beta1"
+projects[pushtape_photos][subdir] = contrib
 
 projects[pushtape_ui][version] = "1.0-beta1"
+projects[pushtape_ui][subdir] = contrib
+
+projects[rdfa][version] = "1.x-dev"
+projects[rdfa][subdir] = contrib
+
+projects[responsive_tables][version] = "2.x-dev"
+projects[responsive_tables][subdir] = contrib
+
+projects[robotstxt][version] = "1.3"
+projects[robotstxt][subdir] = contrib
+
+projects[schemaorg][version] = "1.0-rc1"
+projects[schemaorg][subdir] = contrib
 
 projects[social_links][version] = "1.x-dev"
+projects[social_links][subdir] = contrib
 
-projects[token][version] = "1.5"
+projects[token][version] = "1.6"
+projects[token][subdir] = contrib
 
 projects[transliteration][version] = "3.2"
+projects[transliteration][subdir] = contrib
 
-projects[views][version] = "3.7"
+projects[views][version] = "3.10"
+projects[views][subdir] = contrib
 
-projects[workflow][version] = "2.2"
-
-projects[xmlsitemap][version] = "2.0"
+projects[xmlsitemap][version] = "2.2"
+projects[xmlsitemap][subdir] = contrib
 
 ; Themes
 projects[flux][version] = "1.0-beta1"
+projects[flux][patch][] = "https://raw.githubusercontent.com/valkum/band/master/flux_patch.patch"
 
 projects[framework][version] = "3.6"
 
 ; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
 ; and url is the url of the download.
-projects[wsc_2013][download][type] = "git"
-projects[wsc_2013][download][url] = "https://github.com/valkum/wsc_2013.git"
-projects[wsc_2013][type] = "theme"
-projects[wsc_2013][version] = "7.x-1.0"
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_full.zip"
+libraries[ckeditor][directory_name] = "ckeditor"
+libraries[ckeditor][type] = "library"
+libraries[ckeditor][patch][] = "http://drupal.org/files/1337004-ckeditor-remove-samples-3.patch"
+
+libraries[colorbox][download][type] = "get"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
+libraries[colorbox][directory_name] = "colorbox"
+libraries[colorbox][type] = "library"
+
+libraries[plupload][download][type] = "get"
+libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
+libraries[plupload][directory_name] = "plupload"
+libraries[plupload][type] = "library"
+libraries[plupload][patch][] = "https://www.drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-21.patch"
+

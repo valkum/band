@@ -1,0 +1,16 @@
+Only in flux: flux.info
+Only in flux_patched: flux_patched.info
+Common subdirectories: flux/images and flux_patched/images
+Common subdirectories: flux/js and flux_patched/js
+diff -u flux/style.css flux_patched/style.css
+--- flux/style.css	2013-05-19 12:05:16.000000000 +0200
++++ flux_patched/style.css	2014-04-24 22:17:41.000000000 +0200
+@@ -994,7 +994,7 @@
+ body.logged-in #block-menu-menu-pushtape ul.menu {
+   margin:0 auto;
+   position:relative;
+-  width:570px;
++  /*width:570px;*/
+ }
+ #block-menu-menu-pushtape ul.menu,
+ #block-menu-menu-pushtape ul.menu li {
