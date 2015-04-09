@@ -1,0 +1,38 @@
+name = WSC_2013
+description = Base Theme for WSC. Made with love 2013
+core = 7.x
+engine = phptemplate
+base theme  = flux
+stylesheets[all][] = style.css
+
+scripts[] = js/flux.js
+
+regions[top]            = Top
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[sidebar_first]  = First Sidebar
+regions[front] = Front Page
+regions[footer]         = Footer
+regions[bottom]         = Bottom
+
+
+features[] = logo
+features[] = favicon
+features[] = main_menu
+
+; Theme settings
+settings[default_cover_photo] = 1
+settings[toggle_cover_photo] = 1
+settings[toggle_logo] = 0
+
+
+fonticon[social_link_twitter] = '&#xe00d'
+fonticon[social_link_facebook] = '&#xe01b'
+fonticon[social_link_googleplus] = '&#xe018'
+
+version = "7.x-dev"
+core = "7.x"
+project = "wsc_2013"
