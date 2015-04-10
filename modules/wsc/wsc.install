@@ -19,4 +19,12 @@ function wsc_install() {
   );
   rdf_mapping_save($rdf);
 }
-function wsc_update_7001() {}
+function wsc_update_7001() {
+$rdf = array(
+    'bundle' => 'event',
+    'type' => 'node',
+    'mapping' => rdf_mapping_load('node', 'event'),
+  );
+  $rdf['mapping']['body'] = array('predicates' => array('schema:description'));
+  rdf_mapping_save($rdf);
+  }
