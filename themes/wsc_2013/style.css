@@ -679,6 +679,38 @@ ul.secondary a.active {
   width: 36em;
 }
 
+/** blockquote styles **/
+blockquote {
+  font-size:.9em;
+  width: 350px;
+  overflow: hidden;
+}
+blockquote p:before { content: ' „ ' ' '; color: #444444; font-family: Georgia, serif;font-size:2em; }
+blockquote p:after { content: ' ' ' “ '; color: #444444; font-family: Georgia, serif; font-size:2em; }
+
+.source {
+  display: block;
+  width: 328px;
+  margin:0 0 5px 0;
+  font-weight: bold;
+  font-size: 13px;
+  text-shadow: 0px 1px 0px #010101;
+  padding: 6px 11px;
+  background: #444444;
+  color:#F0F0F0;
+  margin-bottom: 10px;
+}
+.source a {
+  color:#F0F0F0;
+}
+
+blockquote p {
+  line-height: 19px;
+  font-style: italic;
+  padding-left: 15px;
+  margin:0 0 10px 0;
+}
+
 
 /**
  * COMMENTS
