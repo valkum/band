@@ -15,13 +15,12 @@ Drupal.behaviors.flux = {
     var docHeight = $doc.height();
     var winHeight = $(window).height();
     function updateBG() {
-      docHeight = $doc.height();
-      winHeight = $win.height();
       var x = ($doc.scrollTop() / (docHeight - winHeight)) * 100;
       $html.css('background-position','50% '+ x +'%');
     }
-    $doc.scroll(function() {window.requestAnimationFrame(updateBG)});
-    //END
+    if((docHeight - winHeight) > 500) {
+      $doc.scroll(function() {window.requestAnimationFrame(updateBG)});
+    }//END
   }
 };
 
