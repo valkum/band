@@ -4,8 +4,10 @@ core = 7.x
 engine = phptemplate
 base theme  = flux
 stylesheets[all][] = style.css
+stylesheets[all][] = grid.css
 
 scripts[] = js/flux.js
+scripts[] = js/grid.js
 
 regions[top]            = Top
 regions[header]         = Header
